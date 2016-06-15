@@ -1,0 +1,39 @@
+/* ==========================================================================
+   Main Sass source file
+   ========================================================================== */
+/**
+ * This is the main Sass file that will compile to main.css in the styles directory
+ */
+
+/* Global variables
+   ========================================================================== */
+
+$true-white: #FFFFFF;
+$true-black: #000000;
+
+$grey--dark: #2D2D2D;
+$grey--medium: #9E9E9E;
+$grey--light: #ECECEC;
+
+$primary: #178888;
+$accent: #D0D2C9;
+
+$font-family: 'Helvetica', Helvetica, Arial, sans-serif;
+$font-family--alt: 'Lato', sans-serif;
+$font-weight--normal: 400;
+$font-weight--light: 300;
+$font-weight--medium: 700;
+$font-weight--bold: 900;
+
+$font-size--base: 16px;
+$letter-spacing--open: 6px;
+$font-color: $grey--dark;
+
+
+
+/* Import partials
+   ========================================================================== */
+
+@import 'reset';
+@import 'styles';
+
