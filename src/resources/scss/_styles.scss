@@ -1,4 +1,4 @@
-/* Type
+ /* Type
    ========================================================================== */
 
 body {
@@ -22,32 +22,53 @@ p {
 /* Form coponents
    ========================================================================== */
 label {
-	width: 100%;
+  width: 100%;
+
+  font-weight: bold;
+  line-height: 2em;
+  text-transform: capitalize;
 }
 
 input {
-	width: 100%;
-	border-radius: 4px;
-	outline: none;
-	border: 1px solid $grey--medium;
-	box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 30px;
+  padding: 7px;
+
+  border: 1px solid $grey--medium;
+  border-radius: 4px;
+  outline: none;
+
+  font-size: $font-size--base;
+
+  box-sizing: border-box;
 }
 
 button {
-	width: 100%;
-	border-radius: 4px;
-	background-color: $grey--light;
-	border: 1px solid $grey--medium;
-	text-transform: uppercase;
-	color: $grey--medium;
-	font-weight: bold;
-	font-size: $font-size--base;
+  width: 100%;
+  padding: 7px;
+
+  border: 1px solid $grey--medium;
+  border-radius: 4px;
+
+  background-color: $grey--light;
+
+  color: $grey--medium;
+  font-size: $font-size--base;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
 form {
-	padding: 50px 35px;
-	background-color: $grey--light;
+  padding: 50px 35px;
+
+  background-color: $grey--light;
+  border-radius: 5px;
+
+  border: 2px solid $grey--medium;
 }
+
+
 
 
 /* Page components
