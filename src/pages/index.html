@@ -1,13 +1,40 @@
 <h1 class="page__header">Create Your Account</h1>
 
 <div class="page__navigation">
-	<div class="progress-tracker"></div>
+	<div class="progress-tracker">
+		<div class="progress-tracker__graphic">
+			<span class="tracker-level tracker-level__one current"></span>
+			<span class="tracker-level tracker-level__two"></span>
+			<span class="tracker-level tracker-level__three"></span>
+			<span class="tracker-level tracker-level__four"></span>
+		</div>
+		<div class="progress-tracker__labels">
+			<span class="tracker-level__heading">Basic Info</span>
+			<span class="tracker-level__heading">Shipping</span>
+			<span class="tracker-level__heading">Billing</span>
+			<span class="tracker-level__heading">Payment</span>
+		</div>
+	</div>
 </div>
 
 <div class="page__content">
-	<form class="form--checkout">
-		<label for="full-name">Full Name</label>
-		<input type="text" id="full-name">
-	<button class="button--primary">Go To Next Step</button>
+	<form class="form--checkout" id="basic-info" action="shipping-info.html">
+		<div class="field-wrapper">
+			<label for="fullname">Full Name</label>
+			<input type="text" id="fullname" name="fullname" autocomplete="name" placeholder="John Smith" autofocus="autofocus">
+		</div>
+		<div class="field-wrapper">
+			<label for="email-address">Email Address</label>
+			<input type="email" id="email-address" name="emaill-address" autocomplete="email" placeholder="yourname@email.com">
+		</div>
+		<div class="field-wrapper">
+			<label for="password">Password</label>
+			<input type="password" id="password" name="password" autocomplete="false" placeholder="********">
+		</div>
+		<div class="field-wrapper">
+			<label for="password-confirm">Confirm Password</label>
+			<input type="password" id="password-confirm" name="password-confirm" autocomplete="false" placeholder="********">
+		</div>
+		<button class="button button--primary">Go To Next Step</button>
 	</form>
 </div>

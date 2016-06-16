@@ -4,6 +4,7 @@ var panini = require('panini');
 var del = require('del');
 var newer = require('gulp-newer');
 var svgmin = require('gulp-svgmin');
+var autoprefixer = require('gulp-autoprefixer');
 var browserSync = require('browser-sync').create();
 
 var paths = {
@@ -39,6 +40,15 @@ gulp.task('build:css', function () {
   .pipe(gulp.dest('dist/stylesheets'))
   .pipe(browserSync.stream());
 });
+
+gulp.task('css:autoprefix', ['build:css'], function() {
+  return gulp.src('dist/stylesheets/main.css')
+    .pipe(autoprefixer({
+      browsers: ['last 2 versions'],
+      cascade: false
+    }))
+    .pipe(gulp.dest('dist/stylesheets'));
+})
 
 /*
 Task to compile HTML
