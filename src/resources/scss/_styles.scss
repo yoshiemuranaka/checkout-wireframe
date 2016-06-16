@@ -91,7 +91,7 @@ input {
 
   box-sizing: border-box;
 }
--webkit-input-placeholder {
+::-webkit-input-placeholder {
   font-weight: $font-weight--light;
   font-size: 14px;
 }
@@ -122,10 +122,10 @@ select {
   -webkit-appearance: none;
 }
 
-option[disabled] {
+select[disabled] {
   color: $grey--light;
 }
-option:disabled {
+select:disabled {
   color: $grey--light;
 }
 
