@@ -108,7 +108,6 @@ select {
 
   border: 1px solid $grey--medium;
   border-radius: 4px;
-  outline: none;
 
   background-color: $true-white;
 
@@ -241,9 +240,6 @@ button,
 }
 .tracker-level__heading {
   font-size: 12px;
-  &:nth-child(2){
-    text-align:center;
-  }
 }
 
 
